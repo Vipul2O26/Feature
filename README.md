@@ -39,59 +39,57 @@ Fungal adhesins play a key role in host attachment, biofilm formation, and patho
 
 Purpose: Remove sequences with ≥80% similarity.
 
-3. Feature Extraction
-Features extracted using R:
+### 3. Feature Extraction
+- Features extracted using R:
 
-AAC – Amino Acid Composition
+- AAC – Amino Acid Composition
 
-APAAC – Amphiphilic Pseudo-AAC
+- APAAC – Amphiphilic Pseudo-AAC
 
-CTDC, CTDD, CTDT – Composition, Distribution, Transition of grouped properties
+- CTDC, CTDD, CTDT – Composition, Distribution, Transition of grouped properties
 
-DC – Dipeptide Composition
+- DC – Dipeptide Composition
 
-TC – Tripeptide Composition
+- TC – Tripeptide Composition
 
-Output saved as .csv and .arff for use in WEKA.
+- Output saved as .csv and .arff for use in WEKA.
 
-4. Classification (WEKA)
-  Classifiers used:
+### 4. Classification (WEKA)
+ -  Classifiers used:
 
-  SMO (SVM)
+ - SMO (SVM)
 
-  Naive Bayes
+ - Naive Bayes
 
-  J48
+- J48
 
-  Random Forest
+ - Random Forest
 
-  Techniques:
+ - Techniques:
 
-  80/20 train-test split
+ - 80/20 train-test split
 
-5-fold and 10-fold cross-validation
+### 5. fold and 10-fold cross-validation
 
-  Evaluation metrics:
+ - Evaluation metrics:
 
-  Accuracy, AUC, TPR, FPR, MCC
+ - Accuracy, AUC, TPR, FPR, MCC
 
-  Scatter plots, attribute histograms
+- Scatter plots, attribute histograms
 
-  🔎 Results Summary
-  Best Performance:
+-  🔎 Results Summary
+-  Best Performance:
 
-  Tripeptide Composition + SMO classifier
+-  Tripeptide Composition + SMO classifier
 
-  Dipeptide Composition + Naive Bayes also showed strong results
+ - Dipeptide Composition + Naive Bayes also showed strong results
 
-  Visualizations confirm effective separation of classes using selected features.
+ - Visualizations confirm effective separation of classes using selected features.
 
-CD-HIT clustering helped improve data quality.
+- CD-HIT clustering helped improve data quality.
 
-📈 Final Workflow
-java
-Copy
-Edit
+### 6. 📈Final Workflow
+
 FASTA → CD-HIT → R Studio (Features) → ARFF → WEKA → Model Evaluation
 📁 Project Structure
 mathematica
