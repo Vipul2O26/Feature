@@ -55,36 +55,36 @@ TC – Tripeptide Composition
 Output saved as .csv and .arff for use in WEKA.
 
 4. Classification (WEKA)
-Classifiers used:
+  Classifiers used:
 
-SMO (SVM)
+  SMO (SVM)
 
-Naive Bayes
+  Naive Bayes
 
-J48
+  J48
 
-Random Forest
+  Random Forest
 
-Techniques:
+  Techniques:
 
-80/20 train-test split
+  80/20 train-test split
 
 5-fold and 10-fold cross-validation
 
-Evaluation metrics:
+  Evaluation metrics:
 
-Accuracy, AUC, TPR, FPR, MCC
+  Accuracy, AUC, TPR, FPR, MCC
 
-Scatter plots, attribute histograms
+  Scatter plots, attribute histograms
 
-🔎 Results Summary
-Best Performance:
+  🔎 Results Summary
+  Best Performance:
 
-Tripeptide Composition + SMO classifier
+  Tripeptide Composition + SMO classifier
 
-Dipeptide Composition + Naive Bayes also showed strong results
+  Dipeptide Composition + Naive Bayes also showed strong results
 
-Visualizations confirm effective separation of classes using selected features.
+  Visualizations confirm effective separation of classes using selected features.
 
 CD-HIT clustering helped improve data quality.
 
